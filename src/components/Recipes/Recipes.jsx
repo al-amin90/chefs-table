@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Cook_Table from "../Cook_Table/Cook_Table";
 import Recipe from "../Recipe/Recipe";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Recipes = () => {
@@ -20,7 +22,9 @@ const Recipes = () => {
         
         if (!isWantToCook) {
             setWantToCook([...wantToCook, recipe]);
-            console.log("paici mama", isWantToCook);
+        }
+        else {
+            toast.warn("Recpie Already Exist!");
         }
     }
 
@@ -60,6 +64,7 @@ const Recipes = () => {
                     ></Cook_Table>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
