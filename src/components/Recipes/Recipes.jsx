@@ -10,11 +10,11 @@ const Recipes = () => {
                 <h1 className='text-[#150B2B] text-3xl font-semibold'>Our Recipes</h1>
                 <p className='text-sm md:text-base font-normal text-[#150B2B99] mt-7'>Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque. </p>   
             </div>
-            <div className='grid grid-cols-12 gap-5 mt-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-5 mt-10'>
                 <div className='col-span-7 grid md:grid-cols-2 grid-cols-1 gap-5' >
                     <div className="p-5 border border-[#28282833] rounded-2xl">
                         <figure className="">
-                            <img src="https://i.postimg.cc/0QGvLdBL/Rectangle-20170.png" alt="Shoes" className="rounded-xl w-full h-[180px] object-cover" />
+                            <img src="https://i.postimg.cc/0QGvLdBL/Rectangle-20170.png" alt="Shoes" className="rounded-xl w-full object-cover" />
                         </figure>
                         <div className="">
                             <h2 className="mt-5 text-[#282828] font-semibold text-lg mb-3">Spaghetti Bolognese</h2>
@@ -38,13 +38,13 @@ const Recipes = () => {
                                 </div>
                             </div>
                             <div className="card-actions">
-                                <button className='rounded-full btn bg-[#0BE58A] border-none px-6 font-semibold text-base mt-2'>Want to Cook</button>
+                                <button className='rounded-full btn bg-[#0BE58A] border-none px-6 font-semibold text-[#150B2B] text-base mt-2'>Want to Cook</button>
                             </div>
                         </div>
                     </div>
                     <div className="p-5 border border-[#28282833] rounded-2xl">
                         <figure className="">
-                            <img src="https://i.postimg.cc/0QGvLdBL/Rectangle-20170.png" alt="Shoes" className="rounded-xl w-full h-[180px] object-cover" />
+                            <img src="https://i.postimg.cc/0QGvLdBL/Rectangle-20170.png" alt="Shoes" className="rounded-xl w-full object-cover" />
                         </figure>
                         <div className="">
                             <h2 className="mt-5 text-[#282828] font-semibold text-lg mb-3">Spaghetti Bolognese</h2>
@@ -68,13 +68,13 @@ const Recipes = () => {
                                 </div>
                             </div>
                             <div className="card-actions">
-                                <button className='rounded-full btn bg-[#0BE58A] border-none px-6 font-semibold text-base mt-2'>Want to Cook</button>
+                                <button className='rounded-full btn bg-[#0BE58A] border-none px-6 font-semibold text-[#150B2B] text-base mt-2'>Want to Cook</button>
                             </div>
                         </div>
                     </div>
                     
                 </div>
-                <div className='col-span-5 '>
+                <div className='col-span-5 mt-5 lg:mt-0'>
                     <Cook_Table></Cook_Table>
                 </div>
             </div>
