@@ -1,9 +1,9 @@
 [
     {
-        "recipe_id": "001",
-        "recipe_name": "Spaghetti Bolognese",
-        "recipe_image": "https://i.postimg.cc/0QGvLdBL/Rectangle-20170.png",
-        "description": "Classic Italian pasta dish with hearty meat sauce.",
+        "id": "001",
+        "name": "Spaghetti Bolognese",
+        "image": "https://i.postimg.cc/0QGvLdBL/Rectangle-20170.png",
+        "description": "Classic Italian pasta dish with hearty meat sauce, tomatoes, garlic, herbs, and Parmesan cheese.",
         "ingredients": [
             "400g spaghetti",
             "300g ground beef",
@@ -20,9 +20,9 @@
         "calories": 380
     },
     {
-        "recipe_id": "002",
-        "recipe_name": "Chicken Caesar Salad",
-        "recipe_image": "https://i.postimg.cc/RhdsWgYc/Rectangle-20170-1.png",
+        "id": "002",
+        "name": "Chicken Caesar Salad",
+        "image": "https://i.postimg.cc/RhdsWgYc/Rectangle-20170-1.png",
         "description": "Classic salad featuring crisp romaine lettuce, grilled chicken, Parmesan cheese, and Caesar dressing.",
         "ingredients": [
             "2 chicken breasts, grilled and sliced",
@@ -36,9 +36,9 @@
         "calories": 280
     },
     {
-        "recipe_id": "003",
-        "recipe_name": "Turkey Meatloaf",
-        "recipe_image": "https://www.themealdb.com/images/media/meals/ypuxtw1511297463.jpg",
+        "id": "003",
+        "name": "Turkey Meatloaf",
+        "image": "https://www.themealdb.com/images/media/meals/ypuxtw1511297463.jpg",
         "description": "Healthy and flavorful meatloaf made with lean ground turkey, oats, and savory spices.",
         "ingredients": [
             "500g ground turkey",
@@ -56,9 +56,9 @@
         "calories": 220
     },
     {
-        "recipe_id": "004",
-        "recipe_name": "Bitterballen (Dutch meatballs)",
-        "recipe_image": "https://www.themealdb.com/images/media/meals/lhqev81565090111.jpg",
+        "id": "004",
+        "name": "Bitterballen (Dutch meatballs)",
+        "image": "https://www.themealdb.com/images/media/meals/lhqev81565090111.jpg",
         "description": "Delicious Dutch snack made with a creamy beef filling, coated in breadcrumbs, and deep-fried until golden brown.",
         "ingredients": [
             "250g cooked beef, shredded",
@@ -74,9 +74,9 @@
         "calories": 180
     },
     {
-        "recipe_id": "005",
-        "recipe_name": "Egg Drop Soup",
-        "recipe_image": "https://www.themealdb.com/images/media/meals/1529446137.jpg",
+        "id": "005",
+        "name": "Egg Drop Soup",
+        "image": "https://www.themealdb.com/images/media/meals/1529446137.jpg",
         "description": "Simple and comforting Chinese soup made with beaten eggs, chicken broth, and green onions.",
         "ingredients": [
             "4 cups chicken broth",
@@ -90,10 +90,10 @@
         "calories": 100
     },
     {
-        "recipe_id": "006",
-        "recipe_name": "Chicken Karaage",
-        "recipe_image": "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg",
-        "description": "Japanese-style fried chicken marinated in soy sauce, garlic, ginger, and sake.",
+        "id": "006",
+        "name": "Chicken Karaage",
+        "image": "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg",
+        "description": "Japanese-style fried chicken marinated in soy sauce, garlic, ginger, and sake. It test Awesome.",
         "ingredients": [
             "500g chicken thigh fillets, cut into bite-sized pieces",
             "1/4 cup soy sauce",
