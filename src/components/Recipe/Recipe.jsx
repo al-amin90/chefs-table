@@ -1,9 +1,10 @@
 import { LuClock3 } from "react-icons/lu";
 import { RiFireLine } from "react-icons/ri";
-import React from 'react';
 
-const Recipe = ({ recipe }) => {
-    const {id, name, image, description, ingredients, preparing_time, calories} = recipe;
+
+
+const Recipe = ({ recipe, handleWantToCook }) => {
+    const {name, image, description, ingredients, preparing_time, calories} = recipe;
     return (
         <div className="p-5 border border-[#28282833] rounded-2xl">
             <figure className="">
@@ -31,7 +32,9 @@ const Recipe = ({ recipe }) => {
                     </div>
                 </div>
                 <div className="card-actions">
-                    <button className='rounded-full btn bg-[#0BE58A] border-none px-6 font-semibold text-[#150B2B] text-base mt-2'>Want to Cook</button>
+                    <button 
+                        onClick={() => handleWantToCook(recipe)}
+                        className='rounded-full btn bg-[#0BE58A] border-none px-6 font-semibold text-[#150B2B] text-base mt-2'>Want to Cook</button>
                 </div>
             </div>
         </div>

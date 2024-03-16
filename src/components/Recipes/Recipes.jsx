@@ -1,5 +1,3 @@
-// import { LuClock3 } from "react-icons/lu";
-// import { RiFireLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import Cook_Table from "../Cook_Table/Cook_Table";
 import Recipe from "../Recipe/Recipe";
@@ -8,12 +6,33 @@ import Recipe from "../Recipe/Recipe";
 const Recipes = () => {
 
     const [recipes, setRecipes] = useState([])
+    const [wantToCook, setWantToCook] = useState([])
+    const [currentlyCooking, setCurrentlyCooking] = useState([])
 
     useEffect(() => {
         fetch('recipes.json')
             .then(res => res.json())
             .then(data => setRecipes(data))
-    }, [])
+    }, []);
+
+    const handleWantToCook = (recipe) => {
+        const isWantToCook = wantToCook.find(c => c.id === recipe.id);
+        
+        if (!isWantToCook) {
+            setWantToCook([...wantToCook, recipe]);
+            console.log("paici mama", isWantToCook);
+        }
+    }
+
+    const handlePreparing = (id) => {
+        const remainPreparing = wantToCook.filter(p => p.id !== id)
+        setWantToCook(remainPreparing);
+
+        const cooking = wantToCook.find(p => p.id === id);
+        setCurrentlyCooking([...currentlyCooking, cooking]);
+
+        console.log(currentlyCooking);
+    }
 
     return (
         <div className='my-20'>
@@ -27,13 +46,18 @@ const Recipes = () => {
                     {
                         recipes.map(recipe => <Recipe
                             key={recipe.id}
+                            handleWantToCook = {handleWantToCook}
                             recipe={recipe}
                         ></Recipe>) 
                     }
                     
                 </div>
                 <div className='col-span-5 mt-5 lg:mt-0'>
-                    <Cook_Table></Cook_Table>
+                    <Cook_Table
+                        wantToCook={wantToCook}
+                        handlePreparing={handlePreparing}
+                        currentlyCooking = {currentlyCooking}
+                    ></Cook_Table>
                 </div>
             </div>
         </div>
